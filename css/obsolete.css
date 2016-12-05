@@ -1,0 +1,27 @@
+
+body.alt-font {
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+
+body.alt-font .Title--large,
+body.alt-font .Text p,
+body.alt-font .Logo {
+    font-family: "Roboto Slab", "Arial", sans-serif;
+}
+
+body.alt-color .Section {
+    background-color: #ededed;
+}
+
+body.alt-color a,
+body.alt-color .Logo,
+body.alt-color .Price {
+    color: #00992e;
+}
+
+body.alt-color .Button,
+body.alt-color .Icon
+body.alt-color .Nav-item--special .Nav-link {
+    background-color: #00992e;
+
+}

@@ -1,0 +1,493 @@
+/* Defines how the width and height of the element are calculated: whether they include the padding and borders or not. */
+
+html {
+    box-sizing: border-box;
+    font-size: 50%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #242424;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+}
+
+a {
+    /*color: #0058bd;*/
+    color: #bb308f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*------------*/
+
+/* UTILS */
+.u-clearfix:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.u-inner {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.u-hidden {
+    display: none;
+}
+
+
+
+/* MISC COMPONETNS */
+.Conatiner {
+    min-width: 320px;
+}
+.Logo {
+    color: #bb308f;
+    font-family: "Alegreya", Georgia, sans-serif;
+    font-size: 2.8rem;
+}
+.SupportLink {
+    font-size: 1.6rem;
+}
+.SupportLink--large {
+    font-size: 2.4rem;
+}
+
+
+
+/* HEADER */
+.Header-wrapLogo {
+    padding: 20px 0;
+    text-align: center;
+}
+.Header-right {
+    display: none;
+}
+.Header a {
+    color: #fff;
+}
+
+
+/* FOOTER */
+.Footer-inner {
+    position: relative;
+}
+.Footer-col {
+    margin-top: 50px;
+}
+.Footer-col:first-child {
+    margin-top: 0;
+}
+.Footer-separator {
+    display: none;
+}
+.Footer-wrapForm,
+.Footer-wrapSupportLink {
+    margin-top: 10px;
+}
+.Icon {
+    background-color: #e5ce00;
+    border-radius: 50%;
+    display: block;
+    font-size: 12px;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    width: 21px;
+}
+
+
+
+/* FORMS AND BUTTONS */
+.Form fieldset{
+    border: 0;
+    margin: 0;
+    padding:0;
+}
+.Form-group.is-hidden {
+    display: none;
+}
+.Form-row {
+    margin-top: 10px;
+}
+
+.Form-row:first-child {
+    margin-top: 0;
+}
+.Form-wrapInput {
+    float: left;
+    padding-right: 10px;
+    width: 65%;
+}
+.Form-wrapButton {
+    overflow: hidden;
+}
+
+.Form-desc {
+    color: #969696;
+    font-size: 12px;
+}
+.Button {
+    background-color: #e5ce00;
+    border-radius: 10em;
+    border: 0;
+    cursor: hand;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+.Button--form {
+    border-radius: 3px;
+    display: block;
+    padding: 15px;
+}
+.Button-icon {
+    display: block;
+    width: 12px;
+    height: auto;
+}
+.Button--disabled {
+    background-color: #969696;
+}
+.Input {
+    border: 1px solid #c7c7c7;
+    border-radius: 3px;
+    display: block;
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    width: 100%;
+}
+.Input.has-error {
+    border-color: #ff0000;
+}
+
+
+
+/* PRICING */
+.Pricing {
+    background-color: #fff;
+    border: 10px solid #c7c7c7;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    padding: 10px 0;
+}
+.Pricing-wrapButton {
+    margin-top: 20px;
+    padding: 10px;
+}
+.Pricing-wrapPrice {
+    padding: 10px 10px 20px;
+}
+.Pricing-wrapSpec {
+    border-top: 1px solid #c7c7c7;
+    padding: 20px 10px 10px;
+}
+.Pricing-wrapTitle {
+    padding: 10px;
+}
+.Price {
+    font-size: 2.0rem;
+    color: #bb308f;
+}
+.Spec-list {
+    margin: 0;
+    padding: 0;
+}
+.Spec-item {
+    font-size: 1.6rem;
+    list-style: none none outside;
+    margin-top: 5px;
+}
+.Spec-item:first-child {
+    margin-top: 0;
+}
+
+
+/* SECTION */
+.Section {
+    text-align: center;
+}
+.Section--alpha,
+.Section--beta {
+    background-size: cover;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.Section--alpha {
+    background-color: #424143;
+    background-image: url(../img/hero-1-portrait.jpg);
+}
+.Section--beta {
+    background-image: url(../img/hero-2-portrait.jpg);
+    position: relative;
+    text-align: left;
+}
+.Section--beta:before {
+    background-image: linear-gradient(to right, #000 11%, rgba(0,0,0,0.2) 100%);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;    
+    top: 0;
+    z-index: 200;
+}
+.Section-col {
+    margin-top: 20px;
+}
+.Section-col:first-child {
+    margin-top: 0;
+}
+.Section-inner {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.Section--beta .Section-inner {
+    position: relative;
+    z-index: 210;
+}
+.Section-wrapTitle {
+    
+}
+.Section-wrapText {
+    margin-top: 20px;
+}
+.Section-wrapButton {
+    margin-top: 20px;
+}
+.Section-wrapText:first-child {
+    margin-top: 0;
+}
+
+
+
+/* MEDIA */
+.Media-item {
+    margin-top: 20px;
+}
+
+.Media-item:first-child {
+    margin-top: 0;
+}
+
+
+
+/* TEXT */
+.Text p {
+    font-family: "Alegreya", Georgia, sans-serif;
+    font-size: 2.0rem;
+    line-height: 1.5;
+}
+
+.Text--large p {
+    font-size: 2.8rem;
+}
+
+
+
+/* TITLE */
+.Title {
+    font-family: "Alegreya", Georgia, sans-serif;
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+.Title--medium {
+    font-size: 4.0rem;
+}
+.Title--large {
+    font-size: 6.0rem;
+}
+.Title--small {
+    font-size: 2.4rem;
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 480px) {}
+
+@media screen and (min-width: 600px) {
+    .Header {
+        left: 0;
+        padding: 10px 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 900;
+    }
+    .Header.is-stuck {
+        background-color: #fff;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+    .Header.is-stuck a {
+        color: #242424;
+    }
+    .Header.is-stuck .Logo {
+        color: #242424;
+        font-size: 2.4rem;
+    }
+    .Header-inner {
+        display: table;
+        width: 100%;
+    }
+    .Header-wrapLogo,
+    .Header-right {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .Header-wrapLogo {
+        padding: 0;
+        text-align: left;
+    }
+    .Header-right {
+        text-align: right;
+        position: relative;
+        padding: 30px 0;
+    }
+    .Header-wrapSupportLink {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    .Header.is-stuck .Header-wrapSupportLink {
+        display: none;
+    }
+
+    .Footer-col {
+        float: left;
+        padding: 50px;
+        margin-top: 0;
+    }
+    .Footer-col--1of2 {
+        width: 50%;
+    }
+    .Footer-separator {
+        background-color: #c7c7c7;
+        bottom: 0;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 1px;
+    }
+
+    .Footer-wrapIcon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translate(-50%,-50%);
+           -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+    }
+    .Logo {
+        color: #fff;
+    }
+
+    .Nav {
+        display: inline-block;
+    }
+    .Nav-item {
+        display: inline-block;
+        font-size: 1.8rem;
+        list-style: none none outside;
+        margin-left: 10px;
+        vertical-align: middle;
+        text-transform: uppercase;
+    }
+    .Nav-item--special {
+        margin-left: 20px;
+    }
+    .Nav-item:first-child {
+        margin-left: 0;
+    }
+    .Nav-link {
+        display: block;
+        padding: 5px 10px;
+    }
+    .Nav-item--special .Nav-link {
+        background-color: #e5ce00;
+        border-radius: 10em;
+        color: #fff !important;
+        padding: 10px 15px;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    }
+    /*.Header.is-stuck .Nav-item.is-active .Nav-link {
+        color: #000;
+    }*/
+
+    .Section--alpha {
+        height: 100vh;
+        min-height: 700px;
+    }
+    .Section--alpha .Section-inner {
+        left: 50%;
+        padding-bottom: 0;
+        padding-top: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(-50%,-50%);
+           -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+    }
+
+    .Section--negative {
+        margin-top: -150px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .Media-item {
+        float: left;
+        margin-top: 0;
+        width: 33.33%;
+    }
+
+    .Pricing--featured {
+        position: relative;
+        margin: -20px;
+        padding: 30px 0;
+        z-index: 200;
+    }
+
+    .Section-col {
+        float: left;
+        margin-top: 0;
+    }
+    .Section-col--1of3 {
+        width: 33.33%;
+    }
+    .Section-col--2of3 {
+        width: 66.67%;
+    }
+    .Section-inner {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .Section--alpha {
+        background-image: url(../img/hero-1.jpg);
+    }
+    .Section--beta {
+        background-image: url(../img/hero-2.jpg);
+    }
+}
